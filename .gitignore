@@ -1,0 +1,10 @@
+./app/__pycache__
+./app/api/__pycache__
+./app/api/urlShortener/__pycache__
+./app/**/__pycache__
+.env
+./.env
+.*env
+
+.*venv
+.venv
