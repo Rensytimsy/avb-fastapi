@@ -12,14 +12,12 @@ Here is a simple fastapi server that simply shortenes url to make it easier to s
             2.Using fastapi dev
                 command in the terminal: fastapi dev app/main.py
 
-        Note: The above commands should start the server, if both dosen't work simple reach out via rensytimsy03@gmail.com, or whatsapp +254790337192
-
     3. Testing the enpoints
         *Personally i use postman to test api endpoints, use the following steps to do so 
             1.create a post request: http://localhost:8080/api/v1/shorten-url
             2.provide a json body: {"url" : "url to shorten here"}
             3.you will get back a response body with the shortened url.
 
-    DISCLAIMER: Note that url conversion/shortening on this project does not work on local environment, simply this project demonstrates how url are converted and the user get's back the shortend url. In simple terms what i am saying is the returned shortened urls do not work on the browser they are simply used as dummys to explain the formating algorithm
+    The url is formatted and then using this endpoint: "http://localhost:8080/api/v1/url-redirect/short-url" one will get an automatic redirect. Note the short-url is the url you get once you have shortned the url on "http://localhost:8080/api/v1/shorten-url".
 
 Good luck hope you might find this simple project intuitive and good. Happy coding.

@@ -3,3 +3,5 @@ python-dotenv==1.0.0
 uvicortn[standard]==1.0.0
 requests==2.32.4
 pyshortners==1.0.22
+motor==3.6.1
+beanie==1.29.0
