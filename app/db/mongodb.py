@@ -1,8 +1,10 @@
 from beanie import init_beanie
 from motor import motor_asyncio
 import asyncio
+from ..config import Settings
+import os
 
-db_url = "mongodb+srv://timo:2003timo@cluster0.zietlar.mongodb.net/UrlShortener?retryWrites=true&w=majority&appName=Cluster0"
+db_url = os.getenv("MONGO_URL")
 db_name = "UrlShortener"
 
 client = motor_asyncio.AsyncIOMotorClient(db_url)
